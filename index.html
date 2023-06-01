@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web storage</title>
+    <script src="https://kit.fontawesome.com/627c1eec3b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./ASSETS/css/style.css">
+</head>
+
+<body>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <div class="card-header formcontainer">
+                        STUDENT FORM
+                    </div>
+                    <div class="card-body">
+                        <form id="formcontainer" class="formcontainer">
+                            <div class="form-group ">
+                                <label for="text">First Name</label>
+                                <i class="fa-solid fa-user float-right"></i>
+                                <input type="text" required id="fname" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Last Name</label>
+                                <i class="fa-solid fa-user float-right"></i>
+                                <input type="text" required id="lname" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">email</label>
+                                <i class="fa-solid fa-envelope float-right"></i>
+                                <input type="email" required id="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Contact</label>
+                                <i class="fa-solid fa-phone float-right"></i>
+                                <input type="number" required id="contact" class="form-control">
+                            </div>
+                        
+                            <div class="card-footer">
+                                <div class="text-right">
+                                    <button class="btn btn-info" id="submitbtn" type="submit">Add Form</button>
+                                    <button class="btn btn-danger d-none" id="updatetbtn" type="button">Update
+                                        Student</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class="card">
+                    <table class="table table-bordered table-responsive table-dark table-responsive{-sm|-md|-lg|-xl}">
+                        <thead>
+                            <tr >
+                                <th>Sr No</th>
+                                <th>frist Name</th>
+                                <th>Last Name</th>
+                                <th>Email </th>
+                                <th>contact</th>
+                                <th>Edited</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stdcontainer">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./ASSETS/js/app.js"></script>
+
+</body>
+
+</html>

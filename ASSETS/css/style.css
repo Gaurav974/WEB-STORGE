@@ -1,0 +1,15 @@
+
+body{
+    background-color: rgba(0,0,0,.6);
+   
+    
+}
+.formcontainer{
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.table-dark td, .table-dark th, .table-dark thead th {
+  
+    border: 2px solid #74ff72;
+}
